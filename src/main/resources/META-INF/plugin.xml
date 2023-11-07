@@ -10,6 +10,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.amirkatzster.inlaygwdemo.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <editorFactoryListener implementation="com.github.amirkatzster.inlaygwdemo.listeners.InlayDemoEditorFactoryListener" />
     </extensions>
 
     <applicationListeners>
