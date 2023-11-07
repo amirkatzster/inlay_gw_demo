@@ -9,11 +9,9 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.amirkatzster.inlaygwdemo.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <editorFactoryListener implementation="com.github.amirkatzster.inlaygwdemo.listeners.InlayDemoEditorFactoryListener" />
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.amirkatzster.inlaygwdemo.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 </idea-plugin>

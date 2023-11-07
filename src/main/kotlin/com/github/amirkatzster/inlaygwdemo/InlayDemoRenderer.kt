@@ -11,10 +11,10 @@ import java.awt.Graphics
 import java.awt.Rectangle
 import kotlin.math.max
 
-public class InlayDemoInlayRenderer(val associatedRequestSuggestedText: String,
-                                    val associatedRequestDisplayedText: String,
-                                    private val displayedText: String,
-                                    private val inlayTextColor: JBColor,
+public class InlayDemoRenderer(val associatedRequestSuggestedText: String,
+                               val associatedRequestDisplayedText: String,
+                               private val displayedText: String,
+                               private val inlayTextColor: JBColor,
                                     ) : EditorCustomElementRenderer {
 
     private val displayedTextLines: List<String> = displayedText.lines()

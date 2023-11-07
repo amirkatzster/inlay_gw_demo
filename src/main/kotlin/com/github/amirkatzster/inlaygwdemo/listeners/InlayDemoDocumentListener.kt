@@ -1,6 +1,6 @@
 package com.github.amirkatzster.inlaygwdemo.listeners
 
-import com.github.amirkatzster.inlaygwdemo.InlayDemoInlayRenderer
+import com.github.amirkatzster.inlaygwdemo.InlayDemoRenderer
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.editor.event.BulkAwareDocumentListener
 import com.intellij.openapi.editor.event.DocumentEvent
@@ -26,7 +26,7 @@ class InlayDemoDocumentListener(val editor: Editor) : BulkAwareDocumentListener 
             inlayModel.addInlineElement(
                     offset,
                     false,
-                    InlayDemoInlayRenderer(suggestion, originalDisplayedText, firstLine, JBColor.GRAY))
+                    InlayDemoRenderer(suggestion, originalDisplayedText, firstLine, JBColor.GRAY))
         }
     }
 }
